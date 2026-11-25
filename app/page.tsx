@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Home() {
   return (
     <main className="min-h-screen bg-slate-100 flex items-center justify-center px-6">
@@ -23,9 +24,12 @@ export default function Home() {
           "Empowering Student Service Through Technology"
         </p>
 
-        <button className="mt-10 px-8 py-3 bg-green-700 hover:bg-green-800 text-white rounded-xl font-semibold transition">
-          Login
-        </button>
+        <Link
+  href="/login"
+  className="mt-10 px-8 py-3 bg-green-700 hover:bg-green-800 text-white rounded-xl font-semibold transition"
+>
+  Login
+</Link>
 
         <p className="mt-10 text-sm text-gray-400">
           Version 0.1.0
